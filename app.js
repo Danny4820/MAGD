@@ -89,7 +89,8 @@ app.use("/", userRoutes)
 
 
 app.get("/", (req, res) => {
-    res.send("Hi, I am root Directory")
+    // res.send("Hi, I am root Directory")
+    res.redirect("/listings")
 })
 
 // app.get("/demouser",async(req,res)=>{
